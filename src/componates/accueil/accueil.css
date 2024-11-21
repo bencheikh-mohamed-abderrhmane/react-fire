@@ -1,0 +1,65 @@
+/* accueil.css */
+.accueil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.presentation {
+    max-width: 800px;
+    text-align: center;
+    padding: 10px;
+}
+
+.presentation h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.presentation p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Styles pour les écrans de taille moyenne */
+@media (max-width: 768px) {
+    .presentation h1 {
+        font-size: 1.8rem;
+    }
+
+    .presentation p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Styles pour les écrans de petite taille (mobiles) */
+@media (max-width: 480px) {
+    .banner img {
+        border-radius: 4px;
+    }
+
+    .presentation {
+        padding: 5px;
+    }
+
+    .presentation h1 {
+        font-size: 1.5rem;
+    }
+
+    .presentation p {
+        font-size: 0.9rem;
+    }
+}

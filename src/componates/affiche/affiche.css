@@ -1,0 +1,62 @@
+.affiche {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.partnaire, .partnaire2, .partnaire3, .partnaire4 {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 22%;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Permet de disposer les éléments verticalement */
+    justify-content: space-between; /* Assure que le bouton est toujours en bas */
+}
+
+.partnaire img, .partnaire2 img, .partnaire3 img, .partnaire4 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.partnaire h3, .partnaire2 h3, .partnaire3 h3, .partnaire4 h3 {
+    margin-bottom: 10px;
+}
+
+.affiche p {
+    text-align: justify;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Permet aux paragraphes de remplir l'espace disponible */
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsivité pour les tablettes et mobiles */
+@media (max-width: 1024px) {
+    .partnaire, .partnaire2, .partnaire3, .partnaire4 {
+        width: 45%; /* 2 éléments par ligne sur les tablettes */
+    }
+}
+
+@media (max-width: 768px) {
+    .partnaire, .partnaire2, .partnaire3, .partnaire4 {
+        width: 100%; /* Un élément par ligne sur les petits écrans */
+    }
+}
